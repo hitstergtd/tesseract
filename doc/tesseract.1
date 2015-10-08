@@ -220,7 +220,7 @@ user_patterns_suffix user\-patterns
 Now, if you pass the word \fIbazaar\fR as a trailing command line parameter to Tesseract, Tesseract will not bother loading the system dictionary nor the dictionary of frequent words and will load and use the eng\&.user\-words and eng\&.user\-patterns files you provided\&. The former is a simple word list, one per line\&. The format of the latter is documented in dict/trie\&.h on read_pattern_list()\&.
 .SH "HISTORY"
 .sp
-The engine was developed at Hewlett Packard Laboratories Bristol and at Hewlett Packard Co, Greeley Colorado between 1985 and 1994, with some more changes made in 1996 to port to Windows, and some C++izing in 1998\&. A lot of the code was written in C, and then some more was written in C++\&. The C\e++ code makes heavy use of a list system using macros\&. This predates stl, was portable before stl, and is more efficient than stl lists, but has the big negative that if you do get a segmentation violation, it is hard to debug\&.
+The engine was developed at Hewlett Packard Laboratories Bristol and at Hewlett Packard Co, Greeley Colorado between 1985 and 1994, with some more changes made in 1996 to port to Windows, and some C++izing in 1998\&. A lot of the code was written in C, and then some more was written in C++\&. The C++ code makes heavy use of a list system using macros\&. This predates stl, was portable before stl, and is more efficient than stl lists, but has the big negative that if you do get a segmentation violation, it is hard to debug\&.
 .sp
 Version 2\&.00 brought Unicode (UTF\-8) support, six languages, and the ability to train Tesseract\&.
 .sp
